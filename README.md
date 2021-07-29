@@ -2,7 +2,7 @@
 
 Matching a URL is useful for different purposes whether to locate, detect or validate if the string contains a web address, targeting a page or other purposes.
 
-This document will guide you in understanding the composition  or pattern of the regular expression to match a URL.
+This document will guide you in understanding the composition or pattern of the regular expression to match a URL.
 
 
 ## Summary
@@ -56,9 +56,9 @@ As shown in the above piece of code, it indicates a search for a word (`\w `) - 
 
 ## Grouping Constructs
 
-To group an expression, the asterisc `*` is used on more than one element at a time. The sets of characters to be grouped have to be enclosed in parentheses.
+To group an expression, the asterisk `*` is used on more than one element at a time. The sets of characters to be grouped have to be enclosed in parentheses.
 
-For example in our expression we have four groups as shown in the image depicted in the Explanation section for the overall expression.
+For example, in our expression we have four groups as shown in the image depicted in the Explanation section for the overall expression.
 
 In our expression, the `*` is used to match the previous token between zero and unlimited times, as many times as possible, giving back as needed instances. 
 
@@ -75,7 +75,7 @@ In our expression, the `*` is used to match the previous token between zero and 
    [a-z\.] and
 [\/\w \.-]
 ```
-The contents of these sets is explained in detail in the `Explanation` section.
+The contents of these sets are explained in detail in the `Explanation` section.
 
 ### Curly braces
 `{ }` help to specify an amount of items to match, and they are often used after an expression:
@@ -104,7 +104,7 @@ The character classes help distinguish different types of characters, i.e. if th
 `\da-z\` in the expression, is looking for any string of alphabetic characters
 
 Examples of character matches:
-`.` -> matches any single character except line terminatosr `(\n, \r)` -- note that inside a character class, the dot loses its special meaning and it matches the dot.
+`.` -> matches any single character except line terminators `(\n, \r)` -- note that inside a character class, the dot loses its special meaning and it matches the dot.
 
 In our example:
 `[\da-z\.-]` -> the dot here is literal, and the `-` is matching the preceding character.
@@ -112,7 +112,7 @@ In our example:
 ## Flags
 To search for characters or a set of strings, regex has the following flags:
 
-`\d` -> generates indeces for substring matches; in our example, it matches a digit equivalent to [0-9]
+`\d` -> generates indices for substring matches; in our example, it matches a digit equivalent to [0-9]
 
 ![image depicting regex](./assets/images/a-z.png)
 
